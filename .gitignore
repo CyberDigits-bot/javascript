@@ -1,1 +1,14 @@
 node_modules
+// bad
+const breakpoints = {
+  mobile: '@media (max-width: 639px)',
+  tablet: '@media (max-width: 1047px)',
+  desktop: '@media (min-width: 1048px)',
+};
+
+// good
+const breakpoints = {
+  small: '@media (max-width: 639px)',
+  medium: '@media (max-width: 1047px)',
+  large: '@media (min-width: 1048px)',
+};
